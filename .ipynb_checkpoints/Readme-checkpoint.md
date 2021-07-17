@@ -29,7 +29,14 @@ John Macleod
 https://en.wikipedia.org/wiki/John_Macleod_(physiologist)
 
 
+Georg von Békésy -- DID NOT GO TO SHOOL WHERE HE BORN
+https://en.wikipedia.org/wiki/Georg_von_B%C3%A9k%C3%A9sy
 
+Tadeusz Reichstein -- DID NOT GO TO SHOOL WHERE HE BORN
+https://en.wikipedia.org/wiki/Tadeusz_Reichstein
+
+Polykarp Kusch -- DID NOT GO TO SHOOL WHERE HE BORN
+https://en.wikipedia.org/wiki/Polykarp_Kusch
 
 Considering Residence found that residence country is the same as birth_country for 5 records
 nobel_science_df[['fullName','birth_country','birth_countryNow','death_country','death_countryNow','residence_1','residence_2','ind_or_org','country_of_affiliation_1','country_of_affiliation_2','country_of_affiliation_3','country_of_affiliation_4']][nobel_science_df.residence_1.notnull()]
@@ -46,4 +53,19 @@ Also Death Country is not used due to no real relationships from scholling persp
 
 
 
-## Do only pure science categories 
+## Do only pure science categories # nobel_prize_and_schooling
+
+
+
+
+
+
+
+
+
+
+
+
+Install help:
+pip install -U --no-deps mapclassify git+git://github.com/geopandas/geopandas.git@master
+pip install git+git://github.com/geopandas/geopandas.git
