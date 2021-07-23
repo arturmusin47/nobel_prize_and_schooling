@@ -69,3 +69,13 @@ Also Death Country is not used due to no real relationships from scholling persp
 Install help:
 pip install -U --no-deps mapclassify git+git://github.com/geopandas/geopandas.git@master
 pip install git+git://github.com/geopandas/geopandas.git
+
+
+
+
+
+
+## Data Source 
+Websites and/or databases (linked here): 
+https://www.kaggle.com/imdevskp/nobel-prize
+https://ourworldindata.org/grapher/correlation-between-mean-years-of-schooling-and-gdp-per-capita
