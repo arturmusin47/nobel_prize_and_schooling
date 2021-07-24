@@ -5,10 +5,15 @@ Purpose of the project to find out correlation between Nobel Prize Winners in pu
 
 Alfred Nobel was a Swedish chemist, engineer, and industrialist most famously known for the invention of dynamite. 
 The Nobel Prize is five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to ”those who, during the preceding year, have conferred the greatest benefit to humankind.
-Nobel Prizes are widely regarded as the most prestigious awards available in their respective fields
+Nobel Prizes are widely regarded as the most prestigious awards available in their respective fields.
+
 Schooling years average number of years of total schooling across all education levels for the population.
+
 https://en.wikipedia.org/wiki/Nobel_Prize
+
 http://piketty.pse.ens.fr/files/LeeLee2016.pdf
+
+Motivation and goal is to encourage states and governments and educational/research organizations to look at correlation and possibly add more resources to schooling systems.
 
 
 
@@ -16,10 +21,6 @@ http://piketty.pse.ens.fr/files/LeeLee2016.pdf
 Datasets are in csv format with 46950 rows with 7 columns for first dataset and 950 rows with 52 columns for second dataset. 
 Nobel prize dataset: the features of interest are Nobel Prize winner names and countries where each laureate related to. 
 Schooling year dataset: the features of interest are Total years of schooling and Entity/Code (country)
-
-
-
-### Hypo VS Alternative
 
 
 
@@ -50,12 +51,15 @@ Pre-step. Out of 10 columns related to counrty-winner relation 'Birth Country' c
 
 DID NOT GO TO SHOOL WHERE THEY BORN:
 - Georg von Békésy
+
 https://en.wikipedia.org/wiki/Georg_von_B%C3%A9k%C3%A9sy
 
 - Tadeusz Reichstein
+
 https://en.wikipedia.org/wiki/Tadeusz_Reichstein
 
 - Polykarp Kusch
+
 https://en.wikipedia.org/wiki/Polykarp_Kusch
 
 1. Considering USA as leading counrty by winners by huge outperformance over the rest countries in the nobel prize winners dataset and United Kingdom being a second top countries. USA and UK selected for further analysis to find correlation between schooling years and number of nobel winners in science. 
@@ -76,15 +80,17 @@ Scholling years change and nobel winners follow a different distribution and do 
 
 
 
-## Do all categories 
+### Hypo VS Alternative (Bayesian probabilty)
 
+P(born in USA | being a winner) = P(being a winner | born in USA) * P (winner) / P(born in USA)
 
+P_winner=total_winners/mean_total_population
 
-## Do only pure science categories # nobel_prize_and_schooling
+P_born_in_US=mean_USA_population/mean_total_population
 
+P_bornUSA_given_winner= P_winner_given_USA*P_winner/P_born_in_US = 8.076391641549831e-13
 
-
-
+A tiny probability of being born in US given that person be a Nobel prize winner in any category
 
 
 
@@ -98,10 +104,13 @@ Scholling years change and nobel winners follow a different distribution and do 
 
 ## Install help:
 pip install -U --no-deps mapclassify git+git://github.com/geopandas/geopandas.git@master
+
 pip install git+git://github.com/geopandas/geopandas.git
 
 
 ## Data Source 
 Websites and/or databases (linked here): 
+
 https://www.kaggle.com/imdevskp/nobel-prize
+
 https://ourworldindata.org/grapher/correlation-between-mean-years-of-schooling-and-gdp-per-capita
